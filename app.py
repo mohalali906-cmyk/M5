@@ -35,7 +35,7 @@ if user_input:
     with st.chat_message("assistant"):
         with st.spinner("يفكر..."):
             response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",
+                model="openai/gpt-oss-20b",
                 messages=st.session_state.messages,
                 temperature=0.7,
             )
